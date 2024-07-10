@@ -44,3 +44,53 @@ print(animal.rstrip())
 print(animal.lstrip())
 # from both sides 
 print(animal.strip())
+
+
+# removing prefixes
+url = "https://www.google.com"
+print(url)
+print(url.removeprefix('https://www.'))
+
+
+
+# CHAPTER 2 EXERCISES
+
+# 2-3 personal message
+personal_name = "kevin"
+print(f'Hello {name}, would you like to learn some Python today?')
+
+
+# 2-4 name cases
+# uppercase name 
+print(personal_name.upper())
+# lowercase name
+print(personal_name.lower())
+# title name
+print(personal_name.title())
+
+
+# 2-5 famous quote
+print('"Programming is not about what you know; it is about what you can figure out" this quote is by Chris Pine')
+
+# 2-6 famous quote number 2
+famous_person = "Chris Pine"
+message = '"Programming is not about what you know; it is about what you can figure out"'
+print(f'{message}, this quote is by {famous_person}')
+
+# 2-7 stripping names
+celebrity = " Jason Kelce "
+# newline 
+print(f"\n{celebrity}")
+# tab
+print(f"\t{celebrity}")
+# left strip
+print(celebrity.lstrip())
+# right strip
+print(celebrity.rstrip())
+# both side strip
+print(celebrity.strip())
+
+
+# remove suffix 
+filename = "python_notes.txt"
+print(filename.removesuffix('.txt'))
