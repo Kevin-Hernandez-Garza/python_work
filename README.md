@@ -16,3 +16,5 @@ In this chapter I learned to set up my code editor and update my Mac to the late
 
 
 ### Chapter Two
+
+I have learned how to declare variables, use whitespace, and also strip whitespace in order clean up user input in order to store it properly. 

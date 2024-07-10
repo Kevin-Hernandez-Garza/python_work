@@ -1,3 +1,5 @@
+# CHAPTER 2
+
 # declaring variables
 message = "Hello World!"
 print(message)
@@ -26,3 +28,19 @@ full_name = f"{first_name} {last_name}"
 message = f"Hello my name is {full_name.title()}!"
 # prints out name
 print(message)
+
+
+# using tab as whitespace 
+print("Hello\tWorld")
+
+# using newline as whitespace 
+print("\nHello\nWorld")
+
+# stripping whitespace using the strip method
+animal = "  dog  "
+# from the right side
+print(animal.rstrip())
+# from the left side
+print(animal.lstrip())
+# from both sides 
+print(animal.strip())
