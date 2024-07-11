@@ -94,3 +94,22 @@ print(celebrity.strip())
 # remove suffix 
 filename = "python_notes.txt"
 print(filename.removesuffix('.txt'))
+
+
+# working with integers
+# add
+print(4+1)
+# subtract
+print(4-1)
+# multiply
+print(4*1)
+# divide
+print(4/1)
+# exponents
+print(4**3)
+
+# following operation PEMDAS
+print(2+3*4)
+# you can seperate with parentheses
+print((2+3)*4)
+
