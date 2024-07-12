@@ -113,3 +113,11 @@ print(2+3*4)
 # you can seperate with parentheses
 print((2+3)*4)
 
+
+# float numbers
+print(0.2+0.2)
+print(2*0.1)
+
+# arbitrary floats (may be problematic)
+# will learn how to avoid the issue later down the file
+print(0.2+0.1)
