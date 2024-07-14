@@ -121,3 +121,36 @@ print(2*0.1)
 # arbitrary floats (may be problematic)
 # will learn how to avoid the issue later down the file
 print(0.2+0.1)
+
+# dealing with both integers and floats
+# will always give you a float no matter if its
+# a whole number as an output
+print(2 ** 3.0)
+
+# using underscores to make numbers more readable
+universal_number = 10_000_000
+print(universal_number)
+
+# multiple assignments 
+# must have same number or variables and values 
+x, y, z = 100, 101, 103
+print(x,y,z)
+
+# constants
+COUNTRY_OF_BIRTH = "United States"
+print(COUNTRY_OF_BIRTH)
+
+
+# EXERCISES
+
+# 2-9 Number Eight 
+print(5+3)
+print(10-2)
+print(16/2)
+print(4*2)
+
+# 2-10 Favorite Number 
+favorite_number = 18
+print(f'My favorite number is {favorite_number}!')
+
+
