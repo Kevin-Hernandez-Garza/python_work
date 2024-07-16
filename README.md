@@ -21,7 +21,9 @@ In this chapter I learned to set up my code editor and update my Mac to the late
 
 I have learned how to declare variables, use whitespace, and also strip whitespace in order clean up user input in order to store it properly. Additionally, learned a method to remove prefix of a URL. Finally, I also learned how to remove suffix from the end of a string and the whole chapter was reinforced with some exercises. 💪🏼
 
-I also looked at the manipulation of integers.  We finished the chapter by llok at what float numbers look like and the mistakes that they might cause, and you cannot forget about the importance of commenting your code for easier readability. 
+I also looked at the manipulation of integers.  We finished the chapter by llok at what float numbers look like and the mistakes that they might cause, and you cannot forget about the importance of commenting your code for easier readability. 📚
 
 
 ### Chapter Three
+
+In this chapter I am learning about the benefits of using lists in order to store millions of data of any type, and be able to access it at your convenience. 
