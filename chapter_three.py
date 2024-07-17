@@ -31,3 +31,23 @@ own_list = ["My favorite car brand is Honda", "TO be more specific I like the Ho
 print(own_list[0])
 print(own_list[1])
 print(own_list[2])
+
+
+# modifying, adding, and removing elements 
+favorite_colors = ["green", "blue", "red", "purple"]
+print(favorite_colors)
+
+favorite_colors[-1] = "brown"
+print(favorite_colors)
+
+# adding elements to the end of the list 
+# we use the append() method
+favorite_colors.append("black") 
+print(favorite_colors)
+
+# adding elements to an empty list
+foods = []
+foods.append('wings')
+foods.append('pizza')
+foods.append('ramen')
+print(foods)
