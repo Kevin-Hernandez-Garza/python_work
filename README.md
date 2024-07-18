@@ -26,4 +26,4 @@ I also looked at the manipulation of integers.  We finished the chapter by llok 
 
 ### Chapter Three
 
-In this chapter I am learning about the benefits of using lists in order to store millions of data of any type, and be able to access it at your convenience. I also learned how to remove elements from removing the last item to a specific element, and even without knowing where that elemenet is on the list. 
+In this chapter I am learning about the benefits of using lists in order to store millions of data of any type, and be able to access it at your convenience. I also learned how to remove elements from removing the last item to a specific element, and even without knowing where that element is on the list ❌. 
