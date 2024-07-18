@@ -27,7 +27,7 @@ print(f"This is a list of my wonderful friends who are really supportive: {frien
 
 # 3-3 Your Own List
 
-own_list = ["My favorite car brand is Honda", "TO be more specific I like the Honda Accord", "I also like the Toyota brand"]
+own_list = ["My favorite car brand is Honda", "To be more specific I like the Honda Accord", "I also like the Toyota brand"]
 print(own_list[0])
 print(own_list[1])
 print(own_list[2])
@@ -51,3 +51,33 @@ foods.append('wings')
 foods.append('pizza')
 foods.append('ramen')
 print(foods)
+
+
+# inserting elements into list
+# we insert it at index 0 
+foods.insert(0, "hamburgers")
+print(foods)
+
+# removing an element on a specific index
+del foods[0]
+print(foods)
+
+
+# by using the pop method we remove the last element from 
+# a list, but are still able to use it 
+print(foods)
+popped_foods = foods.pop()
+print(foods)
+print(popped_foods)
+
+# you can use the pop method for any index in a list
+print(f"The first element of the foods list is {foods.pop(0)}!")
+
+# when you do not know the index value of a certain element you can remove it 
+# by calling the value
+vehicles = ["bikes", "boats", "airplanes"]
+print(vehicles)
+too_expensive = "airplanes"
+vehicles.remove(too_expensive)
+print(vehicles)
+print(f"\nThe following vehicle is to expensive for me: {too_expensive.title()}!")
