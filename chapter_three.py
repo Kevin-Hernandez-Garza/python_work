@@ -81,3 +81,52 @@ too_expensive = "airplanes"
 vehicles.remove(too_expensive)
 print(vehicles)
 print(f"\nThe following vehicle is to expensive for me: {too_expensive.title()}!")
+
+
+# EXERCISES
+
+# 3-4 Guest List
+guest_list = ["grandma", "grandpa", "wife"]
+print(f"{guest_list[0]} you are invited to dinner!")
+print(f"{guest_list[1]} you are invited to dinner!")
+print(f"{guest_list[2]} you are invited to dinner!")
+
+# 3-5 Changing Guest List
+print(f"{guest_list[0]} could not make it to dinner unfortunantely!")
+unavailable = "grandma"
+guest_list.remove(unavailable)
+guest_list.insert(0, "dad")
+print(f"{guest_list[0]} you are invited to dinner!")
+print(f"{guest_list[1]} you are invited to dinner!")
+print(f"{guest_list[2]} you are invited to dinner!")
+
+# 3-6 More Guests
+print("\nWe found a bigger table therefore we have to invite more people\n")
+guest_list.insert(0, "mom")
+guest_list.insert(2, "brother")
+guest_list.append("sister")
+
+print(f"{guest_list[0]} you are invited to dinner!")
+print(f"{guest_list[1]} you are invited to dinner!")
+print(f"{guest_list[2]} you are invited to dinner!")
+print(f"{guest_list[3]} you are invited to dinner!")
+print(f"{guest_list[4]} you are invited to dinner!")
+print(f"{guest_list[5]} you are invited to dinner!")
+
+# Shrinking Guest List
+print(guest_list)
+first_pop = guest_list.pop(0)
+second_pop = guest_list.pop(4)
+third_pop = guest_list.pop(1)
+fourth_pop = guest_list.pop(2)
+
+print("\nSadly only two guest will make the list for dinner tonight\n")
+print(f"Sorry {first_pop} you did not get the invite!")
+print(f"Sorry {second_pop} you did not get the invite!")
+print(f"Sorry {third_pop} you did not get the invite!")
+print(f"Sorry {fourth_pop} you did not get the invite!")
+
+# deleting the guest list so it is empty
+del guest_list[0]
+del guest_list[0]
+print(guest_list)
