@@ -130,3 +130,17 @@ print(f"Sorry {fourth_pop} you did not get the invite!")
 del guest_list[0]
 del guest_list[0]
 print(guest_list)
+
+
+
+
+# organizing a list
+
+# using the sort method (permanent)
+colors = ["red", "green", "blue", "brown", "purple", "orange", "yellow", "black"]
+print(colors)
+colors.sort()
+print(colors)
+# sorting list in reverse order permanently 
+colors.sort(reverse=True)
+print(colors)
