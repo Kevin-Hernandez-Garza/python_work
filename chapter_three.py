@@ -144,3 +144,66 @@ print(colors)
 # sorting list in reverse order permanently 
 colors.sort(reverse=True)
 print(colors)
+
+
+# sorting list temporarily
+grass_types = ["tall fescue", "fine fescue", "bluegrass", "bermuda", "zoysia", "rye grass"]
+print(f"Here is the temp sorted list: {sorted(grass_types)}")
+print(f"Here is the original list: {grass_types}")
+
+# reversing order w/o organizing it in alphabetic order 
+grass_types.reverse()
+print(grass_types)
+
+# determining the lenght of the list 
+print(len(grass_types))
+
+
+# EXERCISES
+# 3-8 Seeing the World 🌎
+world_wonders = ["hawaii", "greece", "london", "new york", "antartica"]
+print(f"\n\n{world_wonders}\n\n")
+print(sorted(world_wonders))
+print(f"\n{world_wonders}\n")
+# reversing the list 
+world_wonders.reverse()
+# printing reversed list
+print(world_wonders)
+# reversing it back to original form
+world_wonders.reverse()
+# printing list
+print(world_wonders)
+
+# sorting the list (permanent)
+world_wonders.sort()
+print(f"\n{world_wonders}")
+world_wonders.sort(reverse=True)
+print(world_wonders)
+
+
+# 3-9 Lenght of List
+print(len(world_wonders))
+
+# 3-10 Every Function
+adventures = ["grand canyon", "yosemite","mauna kea", "red rocks", "pyramids", "eiffel tower"]
+print(adventures[0].title())
+print(adventures[-1].upper())
+adventures.append("kona")
+print(adventures)
+adventures.insert(0, "pizza")
+print(adventures)
+adventures.pop()
+print(adventures)
+not_adventure = "pizza"
+adventures.remove(not_adventure)
+print(adventures)
+print(f"\n\n{sorted(adventures)}\n\n")
+adventures.sort()
+print(adventures)
+adventures.sort(reverse=True)
+print(adventures)
+
+adventures.reverse()
+print(adventures)
+
+
