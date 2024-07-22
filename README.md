@@ -11,7 +11,7 @@ Embarking on my journey to learn Python programming language, and blogging what 
 
 -[ Chapter Three](#chapter-three)
 
--[Chapter Four](#chapter-four)
+-[ Chapter Four](#chapter-four)
 
 
 ### Chapter One
@@ -32,4 +32,4 @@ In this chapter I am learning about the benefits of using lists in order to stor
 
 ### Chapter Four 
 
-I just learned on how to refactor my code to avoid repetitive code while also avoid indexing errors and access long lists by using the for loop. 📈
+I just learned on how to refactor my code to avoid repetitive code while also avoid indexing errors and access long lists by using the for loop. 📈 I also learned how to print a range of numbers and put them in a list. Additionally, I learned something more in-depth which is learning how to add a third argument to the range functions and skipped certain numbers along with raising them into a power. 
