@@ -54,4 +54,54 @@ for value in range(0,11):
 print(square_numbers)
 
 
+# finding the min of the list
+print(min(square_numbers))
 
+# finding the maxvof the list
+print(max(square_numbers))
+
+# finding the sum of the list
+print(sum(square_numbers))
+
+# list comprehension allows one to have the same result with less code 
+raise_the_power = [value**3 for value in range(0,10,2)]
+print(f"\n{raise_the_power}\n\n")
+
+
+
+# EXERCISES
+
+# 4-3 Counting to Twenty 
+counting_twenty = list(range(1,21))
+print(counting_twenty)
+
+# 4-4 One Million
+million = []
+for num in range(0,1000001, 100000):
+    million.append(num)
+print(million)
+
+# 4-5 Summing one million
+print(min(million))
+print(max(million))
+print(sum(million))
+
+# 4-6 Odd Numbers
+for num in range(1,20,2):
+    print(f"\n{num}\n")
+
+# 4-7 Threes
+multiple_of_three = []
+for num in range(3,30,3):
+    multiple_of_three.append(num)
+print(multiple_of_three)
+print("\n\n")
+
+# 4-8 Cubes
+for cubed in range(1,10):
+    print(cubed**3)
+print("\n\n")
+
+# 4-9 Cube Comprehension
+cubed_list = [num**3 for num in range(1,10)]
+print(cubed_list)
