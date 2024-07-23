@@ -105,3 +105,16 @@ print("\n\n")
 # 4-9 Cube Comprehension
 cubed_list = [num**3 for num in range(1,10)]
 print(cubed_list)
+
+# slicing a list
+players = ["steph", "dwayne", "kd", "jokic", "lebron"]
+print(f"\n\n{players}\n\n")
+print(f"slicing the list of players: {players[0:3]}")
+
+# python will start at the first element if omitted from the statement 
+print(players[:2])
+print(players[3:])
+# giving you the last -3 items of the list
+print(players[-3:])
+# skipping some elements using a third argument
+print(players[0:4:2])
