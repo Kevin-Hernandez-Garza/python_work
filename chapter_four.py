@@ -118,3 +118,9 @@ print(players[3:])
 print(players[-3:])
 # skipping some elements using a third argument
 print(players[0:4:2])
+
+# looping through a subset list
+colors = ["brown", "blue", "green", "red", "purple", "black"]
+for color in colors[:2]:
+    print(color.title())
+print("This is only part of the list!")
