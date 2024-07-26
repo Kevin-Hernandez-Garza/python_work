@@ -124,3 +124,11 @@ colors = ["brown", "blue", "green", "red", "purple", "black"]
 for color in colors[:2]:
     print(color.title())
 print("This is only part of the list!")
+
+
+# copying an existing list 
+my_fav_foods = ["wings", "pizza", "chocolate", "cheesecake", "flan"]
+print(f"This are my favorite foods: {my_fav_foods}")
+
+my_wifes_list = my_fav_foods[:]
+print(f"This are the foods that my wife dislikes: {my_wifes_list}")
