@@ -132,3 +132,17 @@ print(f"This are my favorite foods: {my_fav_foods}")
 
 my_wifes_list = my_fav_foods[:]
 print(f"This are the foods that my wife dislikes: {my_wifes_list}")
+
+# making sure they are different list
+my_fav_foods.append("pecan pie")
+my_wifes_list.append("coffee")
+print(my_fav_foods)
+print(my_wifes_list)
+
+# this is not going to work when creating two seperate lists 
+teams_one = ["eagles", "giants", "cowgirls"]
+team_two = teams_one
+team_two.append("ravens")
+teams_one.append("jets")
+print(f"this is team one: {teams_one}")
+print(f"this is team two: {team_two}")
