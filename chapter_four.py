@@ -146,3 +146,38 @@ team_two.append("ravens")
 teams_one.append("jets")
 print(f"this is team one: {teams_one}")
 print(f"this is team two: {team_two}")
+
+
+# EXERCISES
+
+# 4-10 Slices
+electronics = ["iphone", "tv", "xbox","ps5", "pc", "mac"]
+print(f"The first three items in the list are: {electronics[:3]}")
+print(f"The three middle items of the list are: {electronics[2:5]}")
+print(f"The last three items in the list are: {electronics[-3:]}")
+
+# 4-11 My pizza, Your pizza
+my_pizza_slices = ["pepperoni", "bacon", "sausage", "cheese"]
+friend_pizza_slices = my_pizza_slices[:]
+my_pizza_slices.append("spinach")
+friend_pizza_slices.append("marguerita")
+print("\n\nMy favorite pizza slices are:\n")
+for pizza_slice in my_pizza_slices:
+    print(pizza_slice)
+
+print("\n\nMy friends favorite pizza slices are:\n")
+for friend_slices in friend_pizza_slices:
+    print(friend_slices)
+
+# 4-12 More loops 
+vegetables = ["broccoli", "carrot", "onion", "celery"]
+fruits = ["mango", "banana", "grape", "watermelon"]
+# printing vegetables list
+print("\n\n")
+for veg in vegetables:
+    print(veg)
+print("\n\n")
+# printing fruit list
+for fruit in fruits:
+    print(fruit)
+
