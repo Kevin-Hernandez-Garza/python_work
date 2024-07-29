@@ -176,8 +176,25 @@ fruits = ["mango", "banana", "grape", "watermelon"]
 print("\n\n")
 for veg in vegetables:
     print(veg)
-print("\n\n")
+
 # printing fruit list
+print("\n\n")
 for fruit in fruits:
     print(fruit)
 
+# in python something that is immutable cannot be changed
+# tuples are list that cannot be changed
+print("\n\n")
+unchanged_list = ("colorado", "florida", "georgia")
+print(unchanged_list)
+
+# error is raised when we try to changed the value of a tuple list
+# unchanged_list[0] = "hawaii"
+
+# if tuple has one element it has to be trailed by a comma
+one_tuple = (1,)
+print(one_tuple)
+
+# iterate the tuple
+for unchange in unchanged_list:
+    print(unchange)
