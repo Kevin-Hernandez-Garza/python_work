@@ -198,3 +198,34 @@ print(one_tuple)
 # iterate the tuple
 for unchange in unchanged_list:
     print(unchange)
+
+# the only way to change a value in a tuple 
+# is to reassign the whole tuple
+tuple_change = (10, 20, 30, 40, 50)
+print("\n\nThis is the old tuple:")
+for value in tuple_change:
+    print(value)
+
+# this is the new tuple
+print("\n\nThis is the new tuple:")
+tuple_change = (100, 110, 120, 130, 140)
+for value in tuple_change:
+    print(value)
+
+
+# EXERCISES
+
+# 4-13 Buffet Tuple
+buffet = ("pizza", "brisket", "wings", "fries", "mac n cheese")
+print("This are the buffet menu items offered:\n")
+for item in buffet:
+    print(item)
+
+# creating an error by attempting to reassing an element 
+# buffet[0] = "mash potatoes"
+
+# changing two items of the tuple
+buffet = ("sushi", "brisket", "wings", "baked potato", "mac n cheese")
+print("\nThis is the new tuple buffet list:")
+for item in buffet:
+    print(item)
