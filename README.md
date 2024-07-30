@@ -13,6 +13,8 @@ Embarking on my journey to learn Python programming language, and blogging what 
 
 -[ Chapter Four](#chapter-four)
 
+-[ Chapter Five](#chapter-five)
+
 
 ### Chapter One
 
@@ -30,6 +32,8 @@ I also looked at the manipulation of integers.  We finished the chapter by llok 
 
 In this chapter I am learning about the benefits of using lists in order to store millions of data of any type, and be able to access it at your convenience. I also learned how to remove elements from removing the last item to a specific element, and even without knowing where that element is on the list ❌. 
 
-### Chapter Four 
+### Chapter Four
 
 I just learned on how to refactor my code to avoid repetitive code while also avoid indexing errors and access long lists by using the for loop. 📈 I also learned how to print a range of numbers and put them in a list. Additionally, I learned something more in-depth which is learning how to add a third argument to the range functions and skipped certain numbers along with raising them into a power. I learned how to find the min, max, and sum of a list. Moreover, I learned how to write my own list comprehension to minimize my coding lines. In this chapter we also learning how to slice a list and skip certain elements. I also learned how to copy an existing list. 
+
+### Chapter Five

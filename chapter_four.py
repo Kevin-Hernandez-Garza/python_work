@@ -1,5 +1,4 @@
 # WORKING WITH LISTS
-
 # for loop 
 cities = ["boston", "orlando", "dallas", "kansas city", "aurora", "denver"]
 # for every "city" in the list of cities, print out the name
@@ -9,7 +8,6 @@ print("Let's plan it out!\n")
 
 
 # EXERCISES
-
 # 4-1 Pizzas
 pizzas = ["pepperoni", "sausage", "cheese", "meat lovers", "bacon"]
 for pizza in pizzas:
@@ -66,7 +64,6 @@ print(sum(square_numbers))
 # list comprehension allows one to have the same result with less code 
 raise_the_power = [value**3 for value in range(0,10,2)]
 print(f"\n{raise_the_power}\n\n")
-
 
 
 # EXERCISES
@@ -149,7 +146,6 @@ print(f"this is team two: {team_two}")
 
 
 # EXERCISES
-
 # 4-10 Slices
 electronics = ["iphone", "tv", "xbox","ps5", "pc", "mac"]
 print(f"The first three items in the list are: {electronics[:3]}")

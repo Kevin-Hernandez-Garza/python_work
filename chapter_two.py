@@ -1,5 +1,4 @@
 # CHAPTER 2
-
 # declaring variables
 message = "Hello World!"
 print(message)
@@ -142,7 +141,6 @@ print(COUNTRY_OF_BIRTH)
 
 
 # EXERCISES
-
 # 2-9 Number Eight 
 print(5+3)
 print(10-2)

@@ -14,7 +14,6 @@ print(states[-1].upper())
 
 
 # EXERCISES
-
 # 3-1 Names
 friends = ["john", "doe", "karen", "dobby"]
 print(friends[0])
@@ -130,8 +129,6 @@ print(f"Sorry {fourth_pop} you did not get the invite!")
 del guest_list[0]
 del guest_list[0]
 print(guest_list)
-
-
 
 
 # organizing a list
