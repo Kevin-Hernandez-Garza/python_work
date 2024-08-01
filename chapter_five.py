@@ -17,9 +17,9 @@ print(f"\n\n{name=="kevin"}\n")
 print(name=="pacman")
 
 # conditional tests are case sensitive
-team = "chelsea"
+team = "Chelsea"
 # returns false
-print(f"\n{team=="Chelsea"}\n")
+print(f"\n{team=="chelsea"}\n")
 # returns true 
 print(team.lower()=="chelsea")
 
