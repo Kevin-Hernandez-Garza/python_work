@@ -40,4 +40,23 @@ print(age== 29)
 if age != 40:
     print("You are not old enough yet!")
 
+# more mathematical comparison expressions
+# less than, TRUE
+print(age < 40)
+# greater than, FALSE
+print(age > 40)
+# less than or equal to, TRUE
+print(age <= 40)
+#  greater than or equal to, FALSE
+print(age >= 40)
 
+# using the and keyword to conduct multiple tests
+age_1 = 21
+age_2 = 19
+
+print("\n\n")
+# returns false as age_2 fails the condition
+print(age_1 >= 21 and age_2 >= 21)
+# setting age_2 to a different value to make condition true
+age_2 = 21
+print(age_1 >= 21 and age_2 >= 21)
