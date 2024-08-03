@@ -13,15 +13,15 @@ for car in cars:
 # conditional expression
 # returns a true or false output
 name = "kevin"
-print(f"\n\n{name=="kevin"}\n")
-print(name=="pacman")
+print(f"\n\n{name == "kevin"}\n")
+print(name == "pacman")
 
 # conditional expression are case sensitive
 team = "Chelsea"
 # returns false
-print(f"\n{team=="chelsea"}\n")
+print(f"\n{team == "chelsea"}\n")
 # returns true 
-print(team.lower()=="chelsea")
+print(team.lower() == "chelsea")
 
 # inequality expression
 favorite_game = "pacman"
@@ -34,7 +34,7 @@ if favorite_game != "superman":
 print("\n\n")
 age = 29
 # prints true
-print(age== 29)
+print(age == 29)
 # numerical comparison using the inequality operator
 # the test passes the condition as it does not equal 40
 if age != 40:
@@ -81,5 +81,59 @@ if user not in banned_users:
     print(f"\n{user.title()} you are allowed to access the website!")
 else:
     print(f'{user.title()} you are not allowed to access the website')
+
+
+# EXERCISES 
+# 5-1 Conditional Tests
+car_makes = ["genesis", "lexus", "subaru", "bmw", "honda", "audi"]
+my_age = 29
+print("\n\n")
+# true tests
+print("genesis" in car_makes)
+print(my_age == 29)
+print(my_age >= 18 or my_age <= 18)
+print("toyota" not in car_makes)
+print(my_age >= 21 and my_age <= 40)
+
+# false tests
+print("toyota" in car_makes)
+print(my_age >= 40)
+print(my_age == 30)
+print("lexus" not in car_makes)
+print(my_age >= 60 or my_age <= 18)
+
+
+# 5-2 More Conditional Tests
+print("\n\n")
+# equality and inequality strings 
+profession = "software developer"
+# true
+print(profession == "software developer")
+# false
+print(profession != "software developer")
+
+# using the lower() method
+car = "HONDA"
+print(car.lower() == "honda")
+
+# conditional involving equality, inequality, greater than and less than, 
+# greater than or equal to, less than or equal to 
+her_age = 24
+# true  
+print(her_age == 24)
+# true
+print(her_age != 30)
+# false
+print(her_age > 24 and her_age < 50)
+# true
+print(her_age >= 18 or her_age <= 30)
+
+# not in and in a list operators
+print("\n")
+ages = [21, 29, 20, 26, 24, 23]
+# false
+print( 33 in ages )
+# true
+print( 33 not in ages)
 
 
