@@ -50,7 +50,7 @@ print(age <= 40)
 #  greater than or equal to, FALSE
 print(age >= 40)
 
-# using the and keyword to conduct multiple tests
+# using the and operator which both cases had to be true 
 age_1 = 21
 age_2 = 19
 
@@ -60,3 +60,26 @@ print(age_1 >= 21 and age_2 >= 21)
 # setting age_2 to a different value to make condition true
 age_2 = 21
 print(age_1 >= 21 and age_2 >= 21)
+
+# using the or operator which only one case has to pass the test
+# returns true 
+print(age_1 >= 21 or age_2 >= 21)
+
+# using the in keyword to check where a value is in a list 
+friend_list = ("dobby", "wife", "duncan", "bestfriends")
+# returns false
+print(f'\n\n{"chelsea" in friend_list}')
+# returns true
+print(f'\n{"wife" in friend_list}')
+
+
+# not keyword to check if a value is in a list or not 
+# return the print statement 
+banned_users = ["tristan", "dylan", "paul", "daniel"]
+user = "dylan"
+if user not in banned_users:
+    print(f"\n{user.title()} you are allowed to access the website!")
+else:
+    print(f'{user.title()} you are not allowed to access the website')
+
+
