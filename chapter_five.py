@@ -137,3 +137,72 @@ print( 33 in ages )
 print( 33 not in ages)
 
 
+# if/else statements
+voting_age = 17
+if voting_age >= 18:
+    print("\nYou're old enough to vote!\n")
+else: 
+    print("\nSorry you are not old enough to vote\n")
+
+
+# if-elif-else statement 
+admission_age = 65
+if admission_age < 4:
+    price = 0
+elif admission_age < 18:
+    price = 25
+elif admission_age < 65:
+    price =  40
+elif admission_age >= 65:
+    price = 20 
+# an if-elif-else does not require an else statement
+# else: 
+    # price = 20
+print(f"Your admission price is ${price}\n")
+
+
+# EXERCISES
+# 5-3 Alien Colors #1
+alien_color = "green"
+
+if alien_color == "green":
+    print("You earned 5 points!\n")
+
+if alien_color != "red":
+    print("You earned 5 points!\n")
+
+
+# 5-4 Alien Color #2 
+if alien_color == "green":
+    print("You earned 5 points\n")
+else:
+    print("You just earned 10 points\n")
+
+# 5-5 Alien Color #3
+alien_color = "red"
+if alien_color == "green":
+    print("You earned 5 points\n")
+elif alien_color == "yellow":
+    print("You earned 10 points\n")
+elif alien_color == "red":
+    print("You earned 15 points\n")
+
+# 5-6 Stages of Life
+age = 24
+if age < 2:
+    print("You are just a baby\n")
+elif age >= 2 and age < 4: 
+    print("You are just a toddler\n")
+elif age >= 4 and age < 13:
+    print("You are just a kid\n")
+elif age >= 13 and age < 20:
+    print("You are just a teenager\n")
+elif age >= 20 and age < 65:
+    print("You are an adult\n")
+elif age >= 65:
+    print("You are an elder\n")
+
+# 5-7 Favorite fruit
+favorite_fruits = ["mango", "grape", "kiwi"]
+if "kiwi" in favorite_fruits:
+    print("You really like kiwi!\n")
