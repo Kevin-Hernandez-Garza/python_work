@@ -162,6 +162,7 @@ print(f"Your admission price is ${price}\n")
 
 
 # EXERCISES
+
 # 5-3 Alien Colors #1
 alien_color = "green"
 
@@ -187,6 +188,7 @@ elif alien_color == "yellow":
 elif alien_color == "red":
     print("You earned 15 points\n")
 
+
 # 5-6 Stages of Life
 age = 24
 if age < 2:
@@ -201,6 +203,7 @@ elif age >= 20 and age < 65:
     print("You are an adult\n")
 elif age >= 65:
     print("You are an elder\n")
+
 
 # 5-7 Favorite fruit
 favorite_fruits = ["mango", "grape", "kiwi"]
