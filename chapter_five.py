@@ -209,3 +209,21 @@ elif age >= 65:
 favorite_fruits = ["mango", "grape", "kiwi"]
 if "kiwi" in favorite_fruits:
     print("You really like kiwi!\n")
+
+
+# learning about the combination of for loops and if statements 
+# creating a list what will add toppings to a pizza and then 
+# return a message once it's done
+pizza_toppings = ["pepperoni", "bacon", "sausage", "banana peppers"]
+for item in pizza_toppings:
+    print(f"{item} has been added")
+print("Your pizza is finished, enjoy!\n\n")
+
+
+# same program as above but in this case we ran out of banana peppers
+for topping in pizza_toppings:
+    if topping == "bacon":
+        print("Sorry we have run out of bacon")
+    else:
+        print(f"Adding {topping}")
+print("Pizza is ready, enjoy!")
