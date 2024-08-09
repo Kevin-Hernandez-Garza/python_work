@@ -227,3 +227,14 @@ for topping in pizza_toppings:
     else:
         print(f"Adding {topping}")
 print("Pizza is ready, enjoy!")
+
+
+# checking if a list is empty 
+favorite_sports = []
+
+if favorite_sports:
+    for sport in favorite_sports:
+        print(f"\nOne of your favorite sport is {sport}")
+    print("Finished listing all your favorite sports!\n")
+else:
+    print("\n\nYou have no favorite sports?!?")
