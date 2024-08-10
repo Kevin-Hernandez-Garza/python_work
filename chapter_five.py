@@ -256,3 +256,47 @@ for topping in requested_toppings:
 print("\nYour pizza should be ready for pick up in 15 minutes\n")
 
 
+# EXERCISES
+# 5-8 Hello Admin
+users = ["admin", "kevin", "louis", "fleet", "edward", "darla"]
+for user in users: 
+    if user == "admin":
+        print(f"Hello {"admin".title()}, would you like to see a status report?")
+    else:
+        print(f"Hello {user.title()}, thank you for logging in again!")
+print("\n")
+
+
+# 5-9 No Users
+# program to determine if list of user is indeed empty
+empty_users = []
+if empty_users:
+    for user in empty_users:
+        print(f"Hello {user}")
+else:
+    print("We need to find some users!\n\n")
+
+
+# 5-10 Checking Usernames
+# program to check for usernames taken/available
+current_users = ["admin", "duncan", "dobby", "baby", "kevin"]
+new_users = ["Admin", "Peter", "Steven", "Dobby", "Scott"]
+
+for user in new_users:
+    if user.lower() in current_users:
+        print(f"Sorry the username {user.title()} has been taken, choose a new one!")
+    else:
+        print(f"The username {user.title()} is available!")
+print("\n")
+
+
+# 5-11 Ordinal Numbers
+ordinal_number = [1,2,3,4,5,6,7,8,9]
+
+for num in ordinal_number:
+    if num == 1 or num == 2:
+        print(f"{num}st")
+    elif num == 3:
+        print(f"{num}rd")
+    else:
+        print(f"{num}th")
