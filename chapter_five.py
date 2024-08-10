@@ -238,3 +238,21 @@ if favorite_sports:
     print("Finished listing all your favorite sports!\n")
 else:
     print("\n\nYou have no favorite sports?!?")
+
+
+print("\n\n")
+# using multiple lists
+# making an available list of toppings (tuple)
+available_toppings = ("bacon", "pepperoni", "sausage")
+# list of requested list of topping 
+requested_toppings = ["pepperoni", "bacon", "mushrooms"]
+# creating a for loop to iterate through all requested items
+for topping in requested_toppings:
+# if statement to print our available requested items
+    if topping in available_toppings:
+        print(f"Adding {topping} to your pizza!")
+    else:
+        print(f"We apologize we don't have {topping}")
+print("\nYour pizza should be ready for pick up in 15 minutes\n")
+
+
