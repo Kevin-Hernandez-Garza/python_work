@@ -42,4 +42,4 @@ In this chapter we are learning all about IF statements. We are stating with the
 
 ### Chapter Six
 
-In this chapter we are learning all about dictionaries and how to store data in them. 
+In this chapter we are learning all about dictionaries and how to store data in them. Dictonaries can be accessed through specific key/value pairs. Additionally, dictionaries are dynamic structures and allow you to add more key/value pairs once they have been created. 
