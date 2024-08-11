@@ -5,16 +5,17 @@ Embarking on my journey to learn Python programming language, and blogging what 
 
 ## Table of Contents 📚
 
--[ Chapter One](#chapter-one)
+-[ Chapter One ](#chapter-one)
 
--[ Chapter Two](#chapter-two)
+-[ Chapter Two ](#chapter-two)
 
--[ Chapter Three](#chapter-three)
+-[ Chapter Three ](#chapter-three)
 
--[ Chapter Four](#chapter-four)
+-[ Chapter Four ](#chapter-four)
 
--[ Chapter Five](#chapter-five)
+-[ Chapter Five ](#chapter-five)
 
+-[ Chapter Six ](#chapter-six)
 
 ### Chapter One
 
@@ -38,3 +39,7 @@ I just learned on how to refactor my code to avoid repetitive code while also av
 
 ### Chapter Five
 In this chapter we are learning all about IF statements. We are stating with the basics and conditional tests. I learned how case sensitive conditional tests works and how programs use methods such as the lower method to check all variations of a username to ensure they are unique. I also learned about the or, not, in, and operators in order to check whether a value is in a list. Additionally, I learned how to create true and false tests which conditional operators. We move on to learning about if statements and how they function. It's important that we learned to check if a list is not empty as well. 
+
+### Chapter Six
+
+In this chapter we are learning all about dictionaries and how to store data in them. 
