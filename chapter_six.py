@@ -30,3 +30,18 @@ city_state["Hawaii"] = "Kona"
 print(f"The new value for Hawaii is {city_state["Hawaii"]}")
 
 
+# small program that determines the amount of points earned 
+user_0 = {'points': 0, 'luck' : 'extremely'}
+print(f"\nYour current point value is {user_0['points']}")
+
+if user_0['luck'] == 'low':
+    points = 15
+elif user_0['luck'] == 'medium':
+    points = 20
+elif user_0['luck'] == 'extremely':
+    points = 100
+
+user_0['points'] = user_0['points'] + points
+print(f"\nYour new point value is {user_0['points']}\n")
+
+
