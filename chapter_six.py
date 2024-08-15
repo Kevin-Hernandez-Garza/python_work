@@ -116,3 +116,36 @@ print(f"Variable:\n{glossary['variable']}\n")
 print(f"Dictionaries:\n{glossary['dictionary']}\n")
 print(f"If Statement:\n{glossary['if statement']}\n")
 print(f"For Loop:\n{glossary['for loop']}\n\n")
+
+
+# looping through a dictionary 
+# using the items method to return key/value pairs
+favorite_languages = {
+    'sarah' : 'c++', 
+    'kevin' : 'python', 
+    'scott' : 'java', 
+    'john' : 'c',
+    'steven' : 'python', 
+    }
+
+for name, language in favorite_languages.items():
+    print(f"{name.title()}'s favorite coding language is {language.title()}")
+
+
+print('\n')
+# by default the for loop will return the keys from a dictionary 
+for name in favorite_languages:
+    print(name.title())
+
+
+
+print('\n')
+# program which checks if friends are in the dictionary
+friends = ['kevin', 'sarah', 'dobby']
+for name in favorite_languages:
+    # if name is not in list is will just print hello
+    print(f"Hello {name.title()}!")
+    if name in friends:
+        # if friends is in dictionary this var saves the coding language
+        language = favorite_languages[name].title()
+        print(f"\tI see you like {language} ")
