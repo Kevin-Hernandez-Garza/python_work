@@ -149,3 +149,26 @@ for name in favorite_languages:
         # if friends is in dictionary this var saves the coding language
         language = favorite_languages[name].title()
         print(f"\tI see you like {language} ")
+
+
+# iterating a dictionary using a for loop while sorting it
+print('\n\n')
+ages = {'kevin' : 29, 'duncan' : 14, 'dobby' : 320, 'bluey' : 87}
+for name in sorted(ages):
+    print(f"Hello {name.title()}!")
+
+
+# iterating over values only & sorting them 
+print('\n\n')
+for age in sorted(ages.values()):
+    print(age)
+
+
+# iterating over a dictionary only displaying values once using the set method
+print('\n\n')
+print('This are common programming languages mentioned:')
+coding = {'kevin' : 'python', 'duncan' : 'c++', 'dobby' : 'c', 'josh' : 'c'}
+for language in set(coding.values()):
+    print(language.title())
+
+
