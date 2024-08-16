@@ -138,7 +138,6 @@ for name in favorite_languages:
     print(name.title())
 
 
-
 print('\n')
 # program which checks if friends are in the dictionary
 friends = ['kevin', 'sarah', 'dobby']
@@ -165,10 +164,45 @@ for age in sorted(ages.values()):
 
 
 # iterating over a dictionary only displaying values once using the set method
-print('\n\n')
-print('This are common programming languages mentioned:')
+print('\n\nThis are common programming languages mentioned:')
 coding = {'kevin' : 'python', 'duncan' : 'c++', 'dobby' : 'c', 'josh' : 'c'}
 for language in set(coding.values()):
     print(language.title())
+
+
+# EXERCISES
+# 6-4 Glossary 2
+glossary = {
+    'variable' : 'Reserved memory location to store values', 
+    'dictionary' : 'Mutable DS to store key/value pairs', 
+    'if statement' : 'Conditional to check conditions', 
+    'for loop' : 'Used to repeateadly prints a set of statements',
+    }
+for word, meaning in glossary.items(): 
+    print(f'{word.title()}: {meaning}\n')
+
+
+# 6-5 Rivers
+rivers = {'yangtze' : 'china', 'amazon' : 'brazil', 'nile' : 'egypt'}
+for river, country in rivers.items():
+    print(f'\n{river.title()} is located in the country of {country.title()}')
+# name of rivers
+for river in rivers.keys():
+    print(f'\n{river.title()}')
+# name of countries
+for country in rivers.values():
+    print(f"\n{country.title()}")
+
+
+# 6-6 Polling 
+# set of pollsters
+pollsters = {'kevin', 'baby', 'duncan', 'scott'} 
+coding = {'kevin' : 'python', 'duncan' : 'c++', 'dobby' : 'c', 'josh' : 'c'}
+# sorting the names in pollsters set
+for names in sorted(pollsters):
+    if names in coding:
+        print(f'{names.title()} thank you for taking the poll')
+    elif names not in coding: 
+        print(f'{names.title()} do not forget to take the poll')
 
 
