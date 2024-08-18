@@ -206,3 +206,25 @@ for names in sorted(pollsters):
         print(f'{names.title()} do not forget to take the poll')
 
 
+# Nesting 
+# generating a list of junior developers
+
+# empty list
+devs = []
+
+# creating 10 of the same developers
+for dev in range(10):
+    # creating developer dictionary
+    developer = {"tenure" : "junior", "programming language" : "python"}
+    # appending it to the devs empty list
+    devs.append(developer)
+# checking the number of developers created
+print(f"The number of devs in my team are: {len(devs)}")
+
+# changing the tenure of the first 3 devs to seniors
+for dev in devs[:3]:
+    if dev['tenure'] == 'junior':
+        dev['tenure'] = 'senior'
+        dev['programming language'] = 'c'
+# ensuring the manipulation worked
+print(devs[:3])
