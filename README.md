@@ -17,6 +17,8 @@ Embarking on my journey to learn Python programming language, and blogging what 
 
 -[ Chapter Six ](#chapter-six)
 
+-[ Chapter Seven ](#chapter-seven)
+
 ### Chapter One
 
 In this chapter I learned to set up my code editor and update my Mac to the latest version of Python. I also create a repo and ran my first line of code outputting Hello World! for good luck ✨. Three applications that I hope to build as a beginner to show my expertise are a simple calculator ㉓, to-do list ✅, and a web scraper 🧹.
@@ -43,3 +45,6 @@ In this chapter we are learning all about IF statements. We are stating with the
 ### Chapter Six
 
 In this chapter we are learning all about dictionaries and how to store data in them. Dictonaries can be accessed through specific key/value pairs. Additionally, dictionaries are dynamic structures and allow you to add more key/value pairs once they have been created. Additionally, I learned how to add and modify key/value pairs, and the significance of using empty dictionaries and their used cases. Moreover, I learned how to iterate a dictionary using a for loop. I also just learned how to sort a dictionary in ascending order using the sorted method and iterate over a dictionary and only displaying unique values using the set method. Learning about the range method and appending dictionaries into a list is a powerful to have in my arsenal as well. 
+
+
+### Chapter Seven
