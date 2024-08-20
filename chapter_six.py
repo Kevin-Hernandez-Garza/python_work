@@ -228,3 +228,31 @@ for dev in devs[:3]:
         dev['programming language'] = 'c'
 # ensuring the manipulation worked
 print(devs[:3])
+
+
+# storing a list inside a dictionary
+pizza = {
+    'crust' : 'stuffed',
+    'toppings' : ['pepperoni', 'bacon', 'sausage', 'banana peppers']
+}
+# printing out the pizza dictionary
+print(f'Your ordered a {pizza['crust']} crust pizza with the following toppings:')
+for topping in pizza['toppings']:
+    print(f'\t {topping}')
+
+
+# more list nesting in dictionaries
+# creating dictionary
+coding = {
+    'kevin' : ['python', 'c'],
+    'dobby' : ['java'],
+    'steph' : ['c++', 'cobol']
+ } 
+# iterating over dictionary and displaying name and language
+for name, language in coding.items():
+    print(f"{name.title()} loves the following coding languages:")
+    for code in language:
+        print(f"\t{code}")
+    print('\n')
+
+
