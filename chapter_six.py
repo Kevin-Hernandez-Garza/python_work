@@ -276,3 +276,129 @@ for username, user_info in blog_usernames.items():
     print(f'Username is: {username}')
     print(f'His/Her name is: {name.title()}')
     print(f'The user lives in {location.title()}\n')
+
+
+# EXERCISES
+
+# 6-7 People
+people = [
+    {
+    'first_name' : 'kevin',
+    'last_name' : 'dumbledore',
+    'age' : 35,
+    'city' : 'austria',
+    }, 
+    {
+    'first_name' : 'dobby',
+    'last_name' : 'potter',
+    'age' : 55,
+    'city' : 'london',
+    }, 
+    {
+    'first_name' : 'duncan',
+    'last_name' : 'grainger',
+    'age' : 203,
+    'city' : 'neverland',
+    }
+]
+
+for person in people:
+    name = f"{person['first_name'].title()} {person['last_name'].title()}"
+    age = person['age']
+    city = person['city'].title()
+    print(f'{name} is {age} and lives in the city of {city}')
+print('\n')
+
+
+# 6-8 Pets
+pets = [
+    {
+        'type' : 'guinea pig', 
+        'first' : 'george',
+        'last' : 'washington'
+    }, 
+    {
+        'type' : 'dog', 
+        'first' : 'abraham', 
+        'last': 'lincoln'
+    }, 
+    {
+        'type' : 'otter', 
+        'first' : 'napoleon', 
+        'last' : 'dynamite'
+    }, 
+]
+
+for pet in pets:
+    pet_type = pet['type'].title()
+    owner_name = f'{pet['first'].title()} {pet['last'].title()}'
+    print(f'{owner_name} owns a {pet_type}')
+print('\n')
+
+
+# 6-9 favorite places
+favorite_places = {
+    'john' : [
+        'greece', 
+        'switzerland', 
+        'poland'
+    ],
+
+    'jerry' : [
+        'texas', 
+        'montana', 
+        'california'
+    ],
+    'alexander' : [
+        'hawaii', 
+        'yellowstone', 
+        'georgia'
+    ], 
+}
+
+for name, places in favorite_places.items():
+    print(f"{name.title()}'s favorite places to visit are:")
+    for place in sorted(places):
+        print(f'\t{place.title()}')
+    print('\n')
+
+
+# 6-10 favorite numbers 
+favorite_numbers = {
+    'dobby' : [8,13,21], 
+    'duncan' : [8,15], 
+    'chrys' : [14,45],
+    'kevin' : [4,53,98,87]
+    }
+
+for name,numbers in favorite_numbers.items():
+    print(f'{name.title()} favorite numbers are:')
+    for num in numbers:
+        print(num)
+    print('\n')
+
+
+# 6-11 Cities 
+cities = {
+    'oahu' : {
+        'country' : 'USA',
+        'population' : 1000000,
+        'fact' : 'Most touristic place',
+    },
+    'kona' : {
+        'country' : 'USA',
+        'population' : 254890,
+        'fact' : 'Best scenic views',
+    },
+    'hilo' : {
+        'country' : 'USA',
+        'population' : 345000,
+        'fact' : 'Best natural landscapes',
+    },
+}
+
+for city, info in cities.items():
+    print(f'City: {city.title()}')
+    print(f'Country: {info['country']}')
+    print(f'Population: {info['population']}')
+    print(f'Fun Fact: {info['fact']}\n')
