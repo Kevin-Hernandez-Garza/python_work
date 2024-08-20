@@ -256,3 +256,23 @@ for name, language in coding.items():
     print('\n')
 
 
+# looping a dictionary inside a dictionary
+blog_usernames  = {
+    'kev101' : {
+        'first' : 'kevin', 
+        'last' : 'stephens', 
+        'location' : 'south carolina'
+    }, 
+    'dobby404' : {
+        'first' : 'cole', 
+        'last' : 'matthews', 
+        'location' : 'new jersey'
+    },
+}
+# iterating the program 
+for username, user_info in blog_usernames.items():
+    name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+    print(f'Username is: {username}')
+    print(f'His/Her name is: {name.title()}')
+    print(f'The user lives in {location.title()}\n')
