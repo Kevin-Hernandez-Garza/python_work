@@ -48,3 +48,5 @@ In this chapter we are learning all about dictionaries and how to store data in 
 
 
 ### Chapter Seven
+
+We are starting by learning about the input function in order to take a user's data. 
