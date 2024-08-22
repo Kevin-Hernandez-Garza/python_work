@@ -21,8 +21,9 @@ voting_age = "In order to vote I need your age!"
 voting_age += "\nWhat is your age? "
 age = input(voting_age)
 # converting user input from string to an integer
+age = int(age)
 # while loop to determine if eligible to vote
-if int(age) > 18:
+if age > 18:
     print("You are eligible to vote")
 else: 
     print("You are not able to vote yet, I am sorry!")
