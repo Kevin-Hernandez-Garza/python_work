@@ -45,3 +45,29 @@ if num % 2 == 0:
     print("Your favorite number is even")
 else: 
     print("Your favorite number is odd\n")
+
+
+# EXERCISES
+
+# 7-1 Rental Car
+rental = input("What kind of car would you like to rent: ")
+print(f"Let me see if I can find the {rental.title()} you want to rent out!")
+
+
+# 7-2 Restaurant Seating
+group = input("\nHow many people are in your dinner group: ")
+group = int(group)
+# determining wait or not
+if group >= 8:
+    print("You will have to be on a waitlist")
+else: 
+    print("Your table is ready!")
+
+
+# 7-3 Multiples of Tens
+multiples = input("\nPick a number: ")
+multiples = int(multiples)
+if multiples % 10 == 0:
+    print("Your number is a multiple by 10")
+else:
+    print("Your number is not a multiple by 10")
