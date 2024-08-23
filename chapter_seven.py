@@ -27,3 +27,21 @@ if age > 18:
     print("You are eligible to vote")
 else: 
     print("You are not able to vote yet, I am sorry!")
+
+
+# modulo operator
+# this operator divides one num by another and returns the remainder
+print(21%3)
+print(10%3) 
+
+# program to determine whether num is even or odd
+number = "\nLet determine whether your number is even or odd:"
+number += "\nEnter your favorite number: "
+user_input = input(number)
+# converting user input into an integer instead of a string value
+num = int(user_input)
+
+if num % 2 == 0:
+    print("Your favorite number is even")
+else: 
+    print("Your favorite number is odd\n")
