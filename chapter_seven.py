@@ -71,3 +71,15 @@ if multiples % 10 == 0:
     print("Your number is a multiple by 10")
 else:
     print("Your number is not a multiple by 10")
+
+
+#  while loops
+
+# program that executes as long as the current num is less than or equal to 10
+current_number = 0
+
+while current_number <= 10:
+    # prints current num
+    print(current_number)
+    # add 1 to current number and reassigns it
+    current_number += 1
