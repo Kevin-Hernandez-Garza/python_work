@@ -85,11 +85,9 @@ while current_number <= 10:
 
 
 # creating a program where it prints the users message 
-# until he decides to quit the program
-
+# until he decides to quit the progra
 prompt = "Enter a personal message or the word 'quit' to end the program: "
-# assigning an message an initial empty string to allow it the 
-# program to run
+# assigning an message an initial empty string to allow the program to run
 message = ""
 # while loop
 while message != 'quit':
@@ -97,3 +95,5 @@ while message != 'quit':
     # if it does not equal quit then it prints the user input
     if message != 'quit':
         print(message)
+
+
