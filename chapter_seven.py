@@ -74,7 +74,6 @@ else:
 
 
 #  while loops
-
 # program that executes as long as the current num is less than or equal to 10
 current_number = 0
 
@@ -83,3 +82,18 @@ while current_number <= 10:
     print(current_number)
     # add 1 to current number and reassigns it
     current_number += 1
+
+
+# creating a program where it prints the users message 
+# until he decides to quit the program
+
+prompt = "Enter a personal message or the word 'quit' to end the program: "
+# assigning an message an initial empty string to allow it the 
+# program to run
+message = ""
+# while loop
+while message != 'quit':
+    message = (input(prompt))
+    # if it does not equal quit then it prints the user input
+    if message != 'quit':
+        print(message)
