@@ -49,4 +49,4 @@ In this chapter we are learning all about dictionaries and how to store data in 
 
 ### Chapter Seven
 
-We are starting by learning about the input function in order to take a user's data. The input function return a string where as a int function return a numerical value. Learning all about while loops where they run as long as a condition is true. 
+We are starting by learning about the input function in order to take a user's data. The input function return a string where as a int function return a numerical value. Learning all about while loops where they run as long as a condition is true. I went ahead an created a program where the user is ask to input a personal message until he decides to quit the program. 
