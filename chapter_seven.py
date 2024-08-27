@@ -110,6 +110,30 @@ while active:
     # if user enters quit then it terminates program
     if message == 'quit':
         active = False
+    elif message == 'Quit':
+        active = False
+    elif message == 'QUIT':
+        active = False
     # prints message if not False
     else:
         print(message)
+
+
+# using a break in a loop to terminate a program regardless of outcome
+prompt = "What is your favorite city? "
+prompt += "\nEnter 'quit' to exit program: "
+# the True in the while loop will allow the program to run forever
+while True:
+    city = input(prompt)
+    # if loop taking all variations of the quit value 
+    if city == 'quit':
+        print('Goodbye')
+        break
+    elif city == 'Quit':
+        print('Goodbye')
+        break
+    elif city == 'QUIT':
+        print('Goodbye')
+        break
+    else:
+        print(f'I see that you love {city.title()}')
