@@ -237,3 +237,59 @@ while True:
             print("Your movie ticket cost $12.00")
         elif age > 12: 
             print("Your tickets will cost $15.00")
+
+
+# using list and dictionaries in a while loop
+# list program that verifies users
+unverified_users = ['dobby', 'duncan', 'kevin']
+# list to store them in 
+verified_users = []
+# while loop to run through the unverified list until it's empty
+while unverified_users:
+    # removing them from the unverified list
+    verified = unverified_users.pop()
+    print(f'Verifying user: {verified.title()}')
+    # adding them to the verified list
+    verified_users.append(verified)
+# printing the verified list
+print('\nThe following users have been verified:\n')
+for verified in verified_users:
+    print(verified.title())
+
+
+# using the remove statement and while loop to remove values from list
+pets = ['dog', 'cat', 'bird', 'cat', 'snake', 'hamster', 'cat', 'parrot', 'cat']
+# printing original list
+print(pets)
+# while loop
+while 'cat' in pets:
+    # removing cat value
+    pets.remove('cat')
+# printing modified list 
+print(pets)
+
+
+# # program that takes the users name and response
+# # storing it into a dictionary 
+# # empty dictionary
+responses = {}
+# active flag 
+active_polling = True
+
+while active_polling:
+    user = input("What is your name: ")
+    response = input("What city is your favorite: ")
+
+    # appending user name and response to dictionary (key/value)
+    responses[user] = response 
+    # asking the user if they want to keep going
+    repeat = input('Would you like to continue? (yes/no): ')
+    # if statement to check whether they want to continue or not 
+    if repeat == 'no' or repeat == 'NO':
+        # stoping the while loop 
+        active_polling = False
+# for loop that iterates the key/value pairs in the dictionary
+for name, city in responses.items():
+    print(f'{name.title()} loves the city of {city.title()}')
+    
+
