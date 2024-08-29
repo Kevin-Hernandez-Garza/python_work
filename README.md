@@ -1,6 +1,6 @@
 # Python Journey 👾
 
-Embarking on my journey to learn Python programming language, and blogging what I have learned through reading this 3<sup>rd</sup> edition of the Python Crash Course book.  
+Embarking on my journey to learn Python programming language.
 
 
 ## Table of Contents 📚
@@ -50,3 +50,6 @@ In this chapter we are learning all about dictionaries and how to store data in 
 ### Chapter Seven
 
 We are starting by learning about the input function in order to take a user's data. The input function return a string where as a int function return a numerical value. Learning all about while loops where they run as long as a condition is true. I went ahead an created a program where the user is ask to input a personal message until he decides to quit the program. A flag is a variable assigned in order to determine whether all conditions are true or false and determine whether a program should keep running. Working with lists and dictionaries and manipulating the user data with while loops.
+
+
+#### Built with 💜 using Python Crash Course by Eric Matthes

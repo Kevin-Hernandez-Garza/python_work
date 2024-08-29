@@ -293,3 +293,55 @@ for name, city in responses.items():
     print(f'{name.title()} loves the city of {city.title()}')
     
 
+# EXERCISES
+# 7-8 Deli 
+# list of unmade sandwiches
+sandwiches = ['chicken', 'roast beef', 'ham', 'turkey']
+# empty list to append the finished sandwiches
+finished_sandwiches = []
+
+print('\n\n')
+# iterating over sandwiches 
+while sandwiches:
+    # removing the sandwich from list
+    made = sandwiches.pop()
+    print(f'Making your {made} sandwich ')
+    # appending sandwich to finished list
+    finished_sandwiches.append(made)
+print('\n\n')
+# iterating over finished sandwiches
+for item in finished_sandwiches:
+    print(f"Your {item} sandwich is finished, enjoy!")
+
+
+# 7-9 No Bacon
+pizzas = ['salami', 'bacon', 'pepperoni', 'sausage', 'bacon', 'pineapple']
+print(pizzas)
+print("\nSorry we ran out of bacon pizza\n")
+while 'bacon' in pizzas:
+    pizzas.remove('bacon')
+print('This is what we have available:')
+print(pizzas)
+
+
+# 7-10 Dream city 
+# empty dictionary
+cities = {}
+# flag which tells the program to keep running
+survey = True
+
+while survey:
+    user = input("What is your name: ")
+    city = input("What city would you like to visit: ")
+
+    # appending key/value pairs in dictionary
+    cities[user] = city
+
+    # asking user if he would like to keep putting data into dictionary
+    active = input("\nWould you like to keep inputting more data? (yes/no)")
+    if active == 'no' or active == 'NO':
+        survey = False
+
+# display the data that was inputted
+for user, city in cities.items():
+    print(f'{user.title()} would have his wedding in {city.title()}\n')
