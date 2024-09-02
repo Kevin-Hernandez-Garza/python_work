@@ -55,6 +55,6 @@ We are starting by learning about the input function in order to take a user's d
 
 
 ### Chapter Eight
-
+Learning about functions which are blocks of code that are written once and can be called over and over again. This method helps with writing less code and makes it easier to test. 
 
 #### Built with 💜 using Python Crash Course by Eric Matthes
