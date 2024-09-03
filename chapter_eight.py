@@ -11,8 +11,25 @@ greeting()
 # function that passes information into it
 # declaring a username variable which accepts an user input 
 username = input("Enter your name here: ")
-# defining the function which accepts a username variable
+# defining the function which accepts a parameter
 def user_greeting(username):
     print(f"Hello, {username.title()}!")
-# calling function
+# calling function with the username argument
 user_greeting(username)
+
+
+# EXERCISES
+# 8-1 Message 
+def message():
+    """This function display a simple message 
+    with a brief description of what I am learning"""
+    print("\nIn chapter 8 I am learning about functions\n")
+message()
+
+
+# 8-2 Favorite Book
+book = input("What is your favorite book: ")
+def fav_book(book):
+    """This function asks the user about their favorite book"""
+    print(f"\nI love that your favorite book is {book.title()}\n")
+fav_book(book)
