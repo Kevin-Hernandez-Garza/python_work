@@ -55,6 +55,6 @@ We are starting by learning about the input function in order to take a user's d
 
 
 ### Chapter Eight
-Learning about functions which are blocks of code that are written once and can be called over and over again. This method helps with writing less code and makes it easier to test. I learned about building simple function and calling them. Along with creating a function that accepts user input values. Positional arguments in a function definition are called/assigned in the order that they a are defined in the first place.  
+Learning about functions which are blocks of code that are written once and can be called over and over again. This method helps with writing less code and makes it easier to test. I learned about building simple function and calling them. Along with creating a function that accepts user input values. Positional arguments in a function definition are called/assigned in the order that they a are defined in the first place.  When using default values in a function definition you would have to define it at the end of the parameters to let the python interpreter process the other arguments beforehand. 
 
 #### Built with 💜 using Python Crash Course by Eric Matthes

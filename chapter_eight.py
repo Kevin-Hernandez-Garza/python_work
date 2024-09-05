@@ -46,3 +46,21 @@ def career(name, profession):
     print(f"Glad you pursued a profession in {profession.title()}")
 # function call
 career(name, profession)
+
+# keyword arguments are a more accurate form of positional argument
+# in this case the position does not matter 
+def animal(type, name):
+    print(f"You have a {type} named {name.title()}")
+# calling the funtion with name and type parameter/argunments 
+animal(name = 'dobby', type = 'dog')
+
+
+# default values
+# using default value for certain parameters to stop stop repetition
+# you have to define the defaut value after all other parameters
+def sport(player_name, sport_type = 'soccer'):
+    print(f'{player_name.title()} plays {sport_type}!')
+# calling the function with the player name passed as a argument/parameter
+sport('duncan')
+
+
