@@ -91,3 +91,18 @@ def city(city, country = "ireland"):
 city('belfast')
 # function call with changed default country
 city(country = 'usa', city = 'hilo')
+
+
+# return values 
+# where a function processes data and returns a value 
+first_name = input("\nWhat is your first name: ")
+last_name = input("What is your last name: ")
+# function that takes the first and last name and formats it 
+def name(first_name, last_name):
+    """program that return the users full name"""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+# the function call has to be assigned a variable 
+developer = name(first_name, last_name)
+# we print the result
+print(f"{developer} is an awesome developer!")
