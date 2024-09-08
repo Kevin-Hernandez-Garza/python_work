@@ -26,7 +26,6 @@ def message():
     print("\nIn chapter 8 I am learning about functions\n")
 message()
 
-
 # 8-2 Favorite Book
 book = input("What is your favorite book: ")
 def fav_book(book):
@@ -46,6 +45,7 @@ def career(name, profession):
     print(f"Glad you pursued a profession in {profession.title()}")
 # function call
 career(name, profession)
+
 
 # keyword arguments are a more accurate form of positional argument
 # in this case the position does not matter 
@@ -75,7 +75,6 @@ def make_tee(size, message):
 make_tee('large', 'USA')
 # keyword arguments function call
 make_tee(message = "Hello World!", size = 'small')
-
 
 # 8-4 big tee 
 def large_tee(size = 'large', message = 'I love Python'):
