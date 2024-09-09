@@ -120,3 +120,16 @@ def name(first, last, middle = ''):
     return full_name.title()
 user = name(first, last, middle)
 print(f"Hello {user}!")
+
+
+# returning a dictionary 
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+def dic_name(first_name, last_name):
+    """program that creates a disctionary with of users name"""
+    # putting first and last name into dictionary key/value pairs
+    person = {'first' : first_name, 'last': last_name}
+    # returning dictionary
+    return person
+engineer = dic_name(first_name, last_name)
+print(f"Dictionary data: {engineer}")
