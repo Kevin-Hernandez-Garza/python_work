@@ -126,10 +126,32 @@ print(f"Hello {user}!")
 first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 def dic_name(first_name, last_name):
-    """program that creates a disctionary with of users name"""
+    """program that creates a dictionary with of users name"""
     # putting first and last name into dictionary key/value pairs
     person = {'first' : first_name, 'last': last_name}
     # returning dictionary
     return person
 engineer = dic_name(first_name, last_name)
 print(f"Dictionary data: {engineer}")
+
+
+# using a function with a while loop
+def experience(f_name, careers):
+    """Program that ask the user for their career and name"""
+    professional = f"\n{f_name.title()} is an {careers.title()}!\n"
+    return professional
+
+while True:
+    print("Enter 'no' to exit")
+    exec = input("Would you like to continue (yes/no): ")
+    if exec == 'no' or exec == 'No':
+        # using a break statement to end program
+        print("Goodbye!")
+        break
+    else:
+        f_name = input("What is your first name: ")
+        careers = input("What is your profession: ")
+    # passing the input values to the experience function
+    job = experience(f_name, careers)
+    # printing results
+    print(job)
