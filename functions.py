@@ -153,5 +153,51 @@ while True:
         careers = input("What is your profession: ")
     # passing the input values to the experience function
     job = experience(f_name, careers)
-    # printing results
+    # returning function sentence
     print(job)
+
+
+# EXERCISES
+# 8-6 City Names
+def city_coutry(city, state):
+    """Program that asks the user for his favorite city with country"""
+    destination = f"You just won a trip to {city.title()} located in {state.title()}"
+    return destination
+# while loop to keep generating results until the user is finished
+while True:
+    print("Would you like to participate")
+    participate = input("Enter yes or no: ")
+
+    if participate == 'no' or participate == "No":
+        print("See you next time!")
+        break
+    else: 
+        fave_city = input("What is your favorite city: ")
+        state_origin = input("What state is the city located in: ")
+    des = city_coutry(fave_city, state_origin)
+    print(des) 
+
+
+# 8-7 Album
+def make_album(title, artist, songs=None):
+    """function that takes in a musical artist album info"""
+    info = {'artist': artist.title(), 'album': title.title(), 'number of songs': songs.title()}
+    return info
+while True:
+    cont = input("Would you like to continue (y/n): ")
+    # checking user input
+    if cont == "n" or cont == "N":
+        songs = None
+        print("Please come back!")
+        break
+    else: 
+        print("\nEnter your favorite music album!\n")
+        artist = input("What is the artist name: ")
+        title = input("What is the title of the album: ")
+        num = input("Do you know how many songs are on the album (y/n): ")
+        if num == 'n' or num == 'N':
+            songs = None
+        else: 
+            songs = input("Enter the number of songs: ")
+    dic = make_album(title, artist, songs)
+    print(dic)
