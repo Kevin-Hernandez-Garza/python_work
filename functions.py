@@ -213,3 +213,27 @@ def greeting(names):
 name_of_employee = ['kevin', 'ron', 'harry', 'hagrid']
 # calling the function with the list as the parameter
 greeting(name_of_employee)
+
+
+# creating two functions to seperate the tasks
+unfinished = ['laundry', 'homework', 'dishes', 'rug', 'dinner']
+finished = []
+
+def chores(unfinished, finished):
+    """program which process chores completed
+    and removes the from the unfinished list"""
+    # iterating over unfinished list
+    while unfinished:
+        completed = unfinished.pop()
+        print(f"Completing the following chore: {completed.title()}")
+        finished.append(completed)
+    print("Finished!")
+
+def finished_chores(finished):
+    """program that prints are the chores finished"""
+    print('\nChores Completed\n----------------')
+    for chore in finished:
+        print(f"{chore.title()}")
+# calling functions 
+chores(unfinished, finished)
+finished_chores(finished)
