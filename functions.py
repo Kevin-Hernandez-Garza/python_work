@@ -201,3 +201,15 @@ while True:
             songs = input("Enter the number of songs: ")
     dic = make_album(title, artist, songs)
     print(dic)
+
+
+# passing a list 
+# defining the function
+def greeting(names):
+    """Program that takes in a list of names and greets them"""
+    for name in names:
+        print(f"Hello {name.title()}. Welcome to Google!")
+# creating the list 
+name_of_employee = ['kevin', 'ron', 'harry', 'hagrid']
+# calling the function with the list as the parameter
+greeting(name_of_employee)
