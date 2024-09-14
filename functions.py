@@ -237,3 +237,27 @@ def finished_chores(finished):
 # calling functions 
 chores(unfinished, finished)
 finished_chores(finished)
+
+
+# preventing a list from being modified
+unfinished = ['laundry', 'homework', 'dishes', 'rug', 'dinner']
+finished = []
+
+def chores(unfinished[:], finished):
+    """program which process chores completed
+    and removes the from the unfinished list"""
+    # iterating over unfinished list
+    while unfinished[:]:
+        completed = unfinished.pop()
+        print(f"Completing the following chore: {completed.title()}")
+        finished.append(completed)
+    print("Finished!")
+
+def finished_chores(finished):
+    """program that prints are the chores finished"""
+    print('\nChores Completed\n----------------')
+    for chore in finished:
+        print(f"{chore.title()}")
+# calling functions 
+chores(unfinished, finished)
+finished_chores(finished)
