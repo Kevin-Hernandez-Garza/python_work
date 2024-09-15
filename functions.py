@@ -243,11 +243,11 @@ finished_chores(finished)
 unfinished = ['laundry', 'homework', 'dishes', 'rug', 'dinner']
 finished = []
 
-def chores(unfinished[:], finished):
+def chores(unfinished):
     """program which process chores completed
     and removes the from the unfinished list"""
     # iterating over unfinished list
-    while unfinished[:]:
+    while unfinished:
         completed = unfinished.pop()
         print(f"Completing the following chore: {completed.title()}")
         finished.append(completed)
@@ -258,6 +258,9 @@ def finished_chores(finished):
     print('\nChores Completed\n----------------')
     for chore in finished:
         print(f"{chore.title()}")
-# calling functions 
-chores(unfinished, finished)
+# calling functions and sending a copy of the unfinished list
+chores(unfinished[:], finished)
 finished_chores(finished)
+
+
+# EXERCISES
