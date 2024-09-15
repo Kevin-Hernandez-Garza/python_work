@@ -247,7 +247,7 @@ def chores(unfinished):
     """program which process chores completed
     and removes the from the unfinished list"""
     # iterating over unfinished list
-    while unfinished:
+    while unfinished[:]:
         completed = unfinished.pop()
         print(f"Completing the following chore: {completed.title()}")
         finished.append(completed)
