@@ -264,3 +264,52 @@ finished_chores(finished)
 
 
 # EXERCISES
+# 8-9 Message
+texts = ['hello you', 'i miss you', 'goodbye', 'i am hungry']
+
+def messages(texts):
+    """function which iterates over list of messages 
+    and displays them on the terminal"""
+    for message in texts:
+        # printing message in formatted form
+        print(f"{message.title()}")
+# calling function
+messages(texts)
+
+# 8-10 send message
+message = ['hello you', 'i miss you', 'goodbye', 'i am hungry']
+sent_messages = []
+
+def sent(message, sent_messages):
+    """program which moves message to the sent_message list"""
+    while message:
+        for m in message:
+            m = message.pop()
+            sent_messages.append(m)
+    print("All Messages Succesfully Sent!\n")
+
+print(f"\nMessage list before being sent: {message}\n") 
+# calling the function
+sent(message, sent_messages)
+# printing both list to verify
+print(f"Message list: {message}")
+print(f"Sent list: {sent_messages}")
+
+# 8-11 hidden message
+text = ['hello you', 'i miss you', 'goodbye', 'i am hungry']
+sent_text = []
+
+def sent(text, sent_text):
+    """program which moves message to the sent_message list"""
+    while text[:]:
+        for m in text:
+            m = text.pop()
+            sent_text.append(m)
+    print("All Messages Succesfully Sent!\n")
+
+print(f"\nMessage list before manipulation: {text}\n") 
+# calling the function
+sent(text[:], sent_text)
+# printing both list to verify
+print(f"Message list after manipulation: {text}")
+print(f"Sent list: {sent_text}")
