@@ -313,3 +313,17 @@ sent(text[:], sent_text)
 # printing both list to verify
 print(f"Message list after manipulation: {text}")
 print(f"Sent list: {sent_text}")
+
+
+# passing arbitrary number of arguments 
+# in order to accomplish this we use the asterisk infront of the 
+# argument to create a tuple 
+def pizza(*toppings):
+    """program that iterates over toppings in pizza"""
+    print("Your pizza pie contains the following toppings!")
+    for top in toppings:
+        print(f"- {top}")
+    print("\nYour pizza is done, enjoy!\n")
+# calling function with one and multiple toppings
+pizza('bacon')
+pizza('pepperoni', 'sausage', 'peppers', 'mushrooms')
