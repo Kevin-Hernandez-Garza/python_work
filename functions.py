@@ -327,3 +327,15 @@ def pizza(*toppings):
 # calling function with one and multiple toppings
 pizza('bacon')
 pizza('pepperoni', 'sausage', 'peppers', 'mushrooms')
+
+
+# mixing positional and arbritrary arguments
+def pizza(size, *toppings):
+    """program that iterates over toppings in pie and the size then 
+    displays it on the terminal"""
+    print(f"\nYour pie is {size} inches with the following toppings:")
+    for top in toppings:
+        print(f"- {top}")
+# calling function with one and multiple toppings
+pizza(12, 'bacon')
+pizza(16, 'pepperoni', 'sausage', 'peppers', 'mushrooms')
