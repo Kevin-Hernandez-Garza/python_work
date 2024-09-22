@@ -339,3 +339,12 @@ def pizza(size, *toppings):
 # calling function with one and multiple toppings
 pizza(12, 'bacon')
 pizza(16, 'pepperoni', 'sausage', 'peppers', 'mushrooms')
+
+# using arbritary number of arguments
+def create_user(first, last, **info):
+    info['first_name'] = first
+    info['last_name'] = last
+    return info
+user_exp = create_user('kevin', 'hernandez', city = 'austin', age = 29)
+
+print (user_exp)
