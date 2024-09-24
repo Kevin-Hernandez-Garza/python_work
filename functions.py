@@ -346,5 +346,48 @@ def create_user(first, last, **info):
     info['last_name'] = last
     return info
 user_exp = create_user('kevin', 'hernandez', city = 'austin', age = 29)
-
 print (user_exp)
+
+
+# EXERCISES
+# 8-12 food
+def sandwich(*toppings):
+    """functions which takes an arbitrary 
+      number of arguments and prints them out"""
+    print("You have selected all your toppings!")
+    print(f"{toppings}\n")
+
+sandwich('bacon', 'peppers')
+sandwich('mushrooms', 'banana peppers', 'ham', 'sausage')
+sandwich('salami', 'pepperoni', 'peppers')
+
+# 8-13 profile
+def profile(first, last, **data):
+    """this program takes an employee's data and displays it"""
+    # variable that sets the key = value pair
+    data['first_name'] = first
+    data['last_name'] = last
+    # return info but does not print it
+    return data
+# test 1
+profile_1 = profile('dobby', 'potter', profession = 'engineer', salary = 165000)
+# printing the dictionary with the arguments sent to the function
+print(profile_1)
+# test 2
+profile_2 = profile('duncan', 'potter', profession = 'secretary', salary = 300000)
+# printing the dictionary with the arguments sent to the function
+print(profile_2)
+
+# 8-14 vehicles info
+def vehicle(make, model, **info):
+    """this program takes in a make and model of a vehicle in addition to
+    the year and color of the vehicle"""
+    info["make"] = make
+    info["model"] = model
+    return info
+# setting two examples
+sedan = vehicle("honda", 'crv', year = 2024, color = 'black')
+truck = vehicle('ford', 'f-150', year = 2021, color = 'white')
+# printing results to test them out
+print(sedan)
+print(truck)
