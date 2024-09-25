@@ -1,5 +1,22 @@
 # Functions
 
+# importing module (commented out)
+# import functions_module
+
+# importing specific functions (multiple)
+from functions_module import profile, sandwich
+
+# importing a function and giving it an alias
+from functions_module import create_user as cu
+
+# you can also import a module and give it an alias
+import functions_module as fm
+
+# importing all functions from a module (commented out)
+# from functions_module import *
+
+
+
 # simple function
 def greeting():
     """Greeting the user"""
@@ -340,35 +357,22 @@ def pizza(size, *toppings):
 pizza(12, 'bacon')
 pizza(16, 'pepperoni', 'sausage', 'peppers', 'mushrooms')
 
-# using arbritary number of arguments
-def create_user(first, last, **info):
-    info['first_name'] = first
-    info['last_name'] = last
-    return info
-user_exp = create_user('kevin', 'hernandez', city = 'austin', age = 29)
+
+# IMPORTED FUNCTIONS 
+# IMPORTED FUNCTIONS 
+
+# importing a function while using an alias name 
+user_exp = cu('kevin', 'hernandez', city = 'austin', age = 29)
 print (user_exp)
 
 
-# EXERCISES
-# 8-12 food
-def sandwich(*toppings):
-    """functions which takes an arbitrary 
-      number of arguments and prints them out"""
-    print("You have selected all your toppings!")
-    print(f"{toppings}\n")
-
+# EXERCISES with imported modules 
+# importing specific functions 
+# from moduleName import functionName (doesn't need the dot notation)
 sandwich('bacon', 'peppers')
 sandwich('mushrooms', 'banana peppers', 'ham', 'sausage')
 sandwich('salami', 'pepperoni', 'peppers')
 
-# 8-13 profile
-def profile(first, last, **data):
-    """this program takes an employee's data and displays it"""
-    # variable that sets the key = value pair
-    data['first_name'] = first
-    data['last_name'] = last
-    # return info but does not print it
-    return data
 # test 1
 profile_1 = profile('dobby', 'potter', profession = 'engineer', salary = 165000)
 # printing the dictionary with the arguments sent to the function
@@ -378,16 +382,10 @@ profile_2 = profile('duncan', 'potter', profession = 'secretary', salary = 30000
 # printing the dictionary with the arguments sent to the function
 print(profile_2)
 
-# 8-14 vehicles info
-def vehicle(make, model, **info):
-    """this program takes in a make and model of a vehicle in addition to
-    the year and color of the vehicle"""
-    info["make"] = make
-    info["model"] = model
-    return info
-# setting two examples
-sedan = vehicle("honda", 'crv', year = 2024, color = 'black')
-truck = vehicle('ford', 'f-150', year = 2021, color = 'white')
-# printing results to test them out
+
+# calling a function on a imported file called a module
+# moduleName.functionName()
+sedan = fm.vehicle("honda", 'crv', year = 2024, color = 'black')
+truck = fm.vehicle('ford', 'f-150', year = 2021, color = 'white')
 print(sedan)
 print(truck)
