@@ -31,8 +31,3 @@ def vehicle(make, model, **info):
     info["make"] = make
     info["model"] = model
     return info
-# setting two examples
-sedan = vehicle("honda", 'crv', year = 2024, color = 'black')
-truck = vehicle('ford', 'f-150', year = 2021, color = 'white')
-
-
