@@ -293,6 +293,8 @@ def messages(texts):
 # calling function
 messages(texts)
 
+
+
 # 8-10 send message
 message = ['hello you', 'i miss you', 'goodbye', 'i am hungry']
 sent_messages = []
@@ -304,13 +306,14 @@ def sent(message, sent_messages):
             m = message.pop()
             sent_messages.append(m)
     print("All Messages Succesfully Sent!\n")
-
 print(f"\nMessage list before being sent: {message}\n") 
-# calling the function
+
 sent(message, sent_messages)
-# printing both list to verify
+# calling the function
+
 print(f"Message list: {message}")
 print(f"Sent list: {sent_messages}")
+# printing both list to verify
 
 # 8-11 hidden message
 text = ['hello you', 'i miss you', 'goodbye', 'i am hungry']
@@ -323,69 +326,71 @@ def sent(text, sent_text):
             m = text.pop()
             sent_text.append(m)
     print("All Messages Succesfully Sent!\n")
-
 print(f"\nMessage list before manipulation: {text}\n") 
-# calling the function
+
 sent(text[:], sent_text)
-# printing both list to verify
+# calling the function
+
 print(f"Message list after manipulation: {text}")
 print(f"Sent list: {sent_text}")
+# printing both list to verify
 
 
-# passing arbitrary number of arguments 
-# in order to accomplish this we use the asterisk infront of the 
-# argument to create a tuple 
 def pizza(*toppings):
     """program that iterates over toppings in pizza"""
     print("Your pizza pie contains the following toppings!")
     for top in toppings:
         print(f"- {top}")
     print("\nYour pizza is done, enjoy!\n")
-# calling function with one and multiple toppings
+# passing arbitrary number of arguments 
+# in order to accomplish this we use the asterisk infront of the 
+# argument to create a tuple 
+
+
 pizza('bacon')
 pizza('pepperoni', 'sausage', 'peppers', 'mushrooms')
+# calling function with one and multiple toppings
 
 
-# mixing positional and arbritrary arguments
 def pizza(size, *toppings):
     """program that iterates over toppings in pie and the size then 
     displays it on the terminal"""
     print(f"\nYour pie is {size} inches with the following toppings:")
     for top in toppings:
         print(f"- {top}")
-# calling function with one and multiple toppings
+# mixing positional and arbritrary arguments
 pizza(12, 'bacon')
 pizza(16, 'pepperoni', 'sausage', 'peppers', 'mushrooms')
+# calling function with one and multiple toppings
 
 
-# IMPORTED FUNCTIONS 
-# IMPORTED FUNCTIONS 
+# IMPORTED FUNCTIONS  
 
-# importing a function while using an alias name 
 user_exp = cu('kevin', 'hernandez', city = 'austin', age = 29)
 print (user_exp)
+# importing a function while using an alias name 
 
-
-# EXERCISES with imported modules 
-# importing specific functions 
-# from moduleName import functionName (doesn't need the dot notation)
 sandwich('bacon', 'peppers')
 sandwich('mushrooms', 'banana peppers', 'ham', 'sausage')
 sandwich('salami', 'pepperoni', 'peppers')
+# EXERCISES with imported modules 
+# importing specific functions 
+# from moduleName import functionName (doesn't need the dot notation)
 
-# test 1
+
 profile_1 = profile('dobby', 'potter', profession = 'engineer', salary = 165000)
-# printing the dictionary with the arguments sent to the function
+# test 1
 print(profile_1)
-# test 2
-profile_2 = profile('duncan', 'potter', profession = 'secretary', salary = 300000)
 # printing the dictionary with the arguments sent to the function
+profile_2 = profile('duncan', 'potter', profession = 'secretary', salary = 300000)
+# test 2
 print(profile_2)
+# printing the dictionary with the arguments sent to the function
 
 
-# calling a function on a imported file called a module
-# moduleName.functionName()
 sedan = fm.vehicle("honda", 'crv', year = 2024, color = 'black')
 truck = fm.vehicle('ford', 'f-150', year = 2021, color = 'white')
 print(sedan)
 print(truck)
+# calling a function on a imported file called a module
+# moduleName.functionName()
