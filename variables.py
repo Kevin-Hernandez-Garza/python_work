@@ -56,7 +56,7 @@ print(url.removeprefix('https://www.'))
 
 # 2-3 personal message
 personal_name = "kevin"
-print(f'Hello {name}, would you like to learn some Python today?')
+print(f'Hello {personal_name.title()}, would you like to learn some Python today?')
 
 
 # 2-4 name cases
