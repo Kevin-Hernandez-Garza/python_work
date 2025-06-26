@@ -109,11 +109,11 @@ print(4**3)
 
 # following operation PEMDAS
 print(2+3*4)
-# you can seperate with parentheses
+# you can separate with parentheses
 print((2+3)*4)
 
 
-# float numbers
+# floating point numbers
 print(0.2+0.2)
 print(2*0.1)
 
@@ -135,7 +135,7 @@ print(universal_number)
 x, y, z = 100, 101, 103
 print(x,y,z)
 
-# constants
+# constants (declared by all UPPERCASE)
 COUNTRY_OF_BIRTH = "United States"
 print(COUNTRY_OF_BIRTH)
 

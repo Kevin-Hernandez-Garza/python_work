@@ -1,21 +1,21 @@
-# learning about list
+# learning about list and how to declare one
 states = ['texas', 'california', 'florida', 'new york', 'georgia', 'colorado', 'hawaii']
 print(states)
 
-# accessing individual elements from a list
+# accessing individual elements from a list. In this case we are selecting the first item 
 # manipulating data to capitalize first letter
 print(states[0].title())
 
-print(f'I am from {states[0].title()}, and want to live in {states[6].title()} when I retire!')
+print(f'I am from {states[2].title()}, and want to live in {states[6].title()} when I retire!')
 
 # quickly access the last item in a list 
-# more conveniently without knowing how many items it has
+# more conveniently without knowing how long the list is. 
 print(states[-1].upper())
 
 
 # EXERCISES
 # 3-1 Names
-friends = ["john", "doe", "karen", "dobby"]
+friends = ["john", "doe", "duncan", "dobby"]
 print(friends[0])
 print(friends[1])
 print(friends[2])
@@ -26,17 +26,19 @@ print(f"This is a list of my wonderful friends who are really supportive: {frien
 
 # 3-3 Your Own List
 
-own_list = ["My favorite car brand is Honda", "To be more specific I like the Honda Accord", "I also like the Toyota brand"]
+own_list = ["My favorite car brand is Lexus", "To be more specific I like the Lexus NX350 AWD", "I also like the BMW brand"]
 print(own_list[0])
 print(own_list[1])
 print(own_list[2])
 
 
-# modifying, adding, and removing elements 
+# modifying, adding, and removing elements from a list.
 favorite_colors = ["green", "blue", "red", "purple"]
+# printing out original list
 print(favorite_colors)
-
+# modifying the last item in the list 
 favorite_colors[-1] = "brown"
+# printing newly modified list
 print(favorite_colors)
 
 # adding elements to the end of the list 
